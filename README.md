@@ -82,6 +82,8 @@ Ada 5 Poin yang ingin dilihat oleh management:
              ON o.order_id = od.order_id
          WHERE EXTRACT(YEAR FROM o.order_date) = 2025
          GROUP BY TO_CHAR(DATE_TRUNC('month', o.order_date), 'mm')
+
+- 📌 Output csv : [T1_MonthlyPerformance](Output_csv/T1_Monthly_Performance.csv)
    
 2. Shipper SLA (YTD)
 
@@ -99,7 +101,9 @@ Ada 5 Poin yang ingin dilihat oleh management:
          GROUP BY s.shipper_id
          ORDER BY late_rate_percent DESC;
 
-3. Top 10 Products by Revenue (YTD)
+   - 📌 Output csv : [T2_SLA Shipper](Output_csv/T2_sla.ship.csv)
+
+4. Top 10 Products by Revenue (YTD)
 
          with product_revenue as (	
          	select
@@ -127,8 +131,9 @@ Ada 5 Poin yang ingin dilihat oleh management:
          order by pr.total_revenue desc
          limit 10 ;
 
+- 📌 Output csv : [T3_Top10Product](Output_csv/T3_top10productbyrevenue.csv)
    
-4. Sales Rep Scorecard (YTD)
+5. Sales Rep Scorecard (YTD)
 
          WITH order_totals AS (
              SELECT 
@@ -156,8 +161,10 @@ Ada 5 Poin yang ingin dilihat oleh management:
          SELECT *
          FROM employee_summary
          ORDER BY total_orders DESC;
+
+- 📌 Output csv : [T4_SalesRepScorecard](Output_csv/t4_sales_res_scorecard.csv)
    
-5. New vs Loyal Customers (YTD)
+6. New vs Loyal Customers (YTD)
 
          WITH first_order AS (
              -- 1. Cari tanggal first order setiap customer
@@ -192,6 +199,8 @@ Ada 5 Poin yang ingin dilihat oleh management:
              FROM ytd_orders yo
              LEFT JOIN first_order fo
                  ON yo.customer_id = fo.customer_id
+
+- 📌 Output csv : [T5_LoyalVSNewCustomer](Output_csv/t5_New_VS_Loyal_Customer.csv)
 
 # Visualization
 1. Monthly Performance
