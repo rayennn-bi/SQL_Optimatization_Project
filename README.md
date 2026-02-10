@@ -1,4 +1,4 @@
-# SQL Optimatization Project and Visualization
+# SQL Optimization & Performance Visualization Project
 ![profil](Image/PostgreSQL-Bases-de-datos.webp)
 
 # Tools
