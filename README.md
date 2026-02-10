@@ -1,6 +1,9 @@
-# SQL_Optimatization_Project
+# SQL Optimatization Project and Visualization
 ![profil](Image/PostgreSQL-Bases-de-datos.webp)
 
+# Tools
+- Postgreeql
+- Power BI
 
 # Database overview
 
@@ -190,6 +193,23 @@ Ada 5 Poin yang ingin dilihat oleh management:
              LEFT JOIN first_order fo
                  ON yo.customer_id = fo.customer_id
 
-   # Visualisasi
-
+# Visualization
+1. Monthly Performance
    
+   ![monthly_performance](Visualisasi/Monthly_sales_performance_2025.png)
+   
+3. Shipper SLA (YTD)
+   
+   ![dataovw](Visualisasi/SLA_Shipper_2025.png)
+   
+5. Top 10 Product by Revenue (YTD)
+   
+   ![dataovw](Visualisasi/Top10productbyrevenue_2025.png)
+   
+7. Sales Rep Scorecard (YTD)
+   
+   ![dataovw](Visualisasi/Sales_Rep_Scorecard_2025.png)
+   
+9. New vs Loyal Customers (YTD)
+    
+   ![dataovw](Visualisasi/Loyal_vs_New_Customer_2025.png)
