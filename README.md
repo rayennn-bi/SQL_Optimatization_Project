@@ -2,7 +2,7 @@
 ![profil](Image/PostgreSQL-Bases-de-datos.webp)
 
 # Tools
-- Postgreeql
+- PostgreSQL
 - Power BI
 
 # Database overview
